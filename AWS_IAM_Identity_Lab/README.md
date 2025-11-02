@@ -16,24 +16,22 @@ In this scenario, the user `Alice` is granted **full access to a specific S3 buc
 For a detailed explanation of this lab and step-by-step guidance, check out my blog post:  
 [Mastering AWS IAM: Identity-Based Policies Lab](https://medium.com/@jobanjitsinghamritsar/hands-on-aws-iam-lab-enforcing-identity-based-access-control-85b7f7f5bf78)  
 
+---
 
 ## Project Structure
-
 AWS_ProjectLab/
-│
 └── 📂 AWS_IAM_Identity_Lab/
-    ├── 🖼️ Screenshots/
-    │   ├── 🧩 AWS_Identity&AccessManagement.png
-    │   ├── 👤 AWS_IAM_Admin_Account.png
-    │   ├── 🪪 Step1_CreateUser.png
-    │   ├── ✅ Step2_AllowPolicy.png
-    │   ├── ⛔ Step3_DenyPolicy.png
-    │   ├── 🔗 Step4_AttachPolicies.png
-    │   ├── 🪣 Step5_AllowedBucket.png
-    │   └── 🚫 Step6_DeniedBucket.png
-    │
-    ├── 📄 README.md
-    └── 📚 [Other AWS Labs Coming Soon]
+├── 🖼️ Screenshots/
+│ ├── 🧩 AWS_Identity&AccessManagement.png
+│ ├── 👤 AWS_IAM_Admin_Account.png
+│ ├── 🪪 Step1_CreateUser.png
+│ ├── ✅ Step2_AllowPolicy.png
+│ ├── ⛔ Step3_DenyPolicy.png
+│ ├── 🔗 Step4_AttachPolicies.png
+│ ├── 🪣 Step5_AllowedBucket.png
+│ └── 🚫 Step6_DeniedBucket.png
+├── 📄 README.md
+└── 📚 [Other AWS Labs Coming Soon]
 
 
 ---
@@ -73,11 +71,9 @@ AWS_ProjectLab/
     ]
 }
 
-Name policy: AllowCloudLabsDataAccess.
+Name policy: AllowCloudLabsDataAccess
 
 Description: Full access to cloudlabs-project-data bucket.
-
-Click Create Policy.
 
 📸 Screenshot Placeholder: Screenshots/Step2_AllowPolicy.png
 
@@ -86,7 +82,6 @@ Step 3: Create Deny Policy for All Other Buckets
 Navigate to IAM → Policies → Create Policy → JSON tab.
 
 Paste the following JSON:
-
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -119,29 +114,19 @@ Important: Ensure Alice does not belong to any group or have other policies gran
 Step 5: Test Access
 
 Log in as Alice and verify access:
-
 | Action                   | Bucket                 | Expected Result |
 | ------------------------ | ---------------------- | --------------- |
 | List / Get / Put Objects | cloudlabs-project-data | ✅ Allowed       |
 | Access / Upload          | Any other bucket       | ❌ Denied        |
 
-📸 Screenshot Placeholders:
-
-Screenshots/Step5_AllowedBucket.png
-
-Screenshots/Step5_DeniedBucket.png
-
 Conclusion
 
 Identity-Based Policies provide fine-grained control over user access in AWS.
-
 Combining Allow for required resources and Explicit Deny for all others ensures strong security.
-
 Any new S3 buckets created in the account are automatically inaccessible to Alice.
-
 This lab demonstrates a real-world approach to securing AWS resources while adhering to the least privilege principle.
 
-References
+6. References
 
 AWS IAM User Guide – Identity-Based Policies
 https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
