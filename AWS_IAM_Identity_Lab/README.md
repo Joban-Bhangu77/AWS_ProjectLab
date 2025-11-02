@@ -17,23 +17,24 @@ For a detailed explanation of this lab and step-by-step guidance, check out my b
 [Mastering AWS IAM: Identity-Based Policies Lab](https://medium.com/@jobanjitsinghamritsar/hands-on-aws-iam-lab-enforcing-identity-based-access-control-85b7f7f5bf78)  
 
 ---
-'''
-## Project Structure
-AWS_ProjectLab/
-└── 📂 AWS_IAM_Identity_Lab/
-├── 🖼️ Screenshots/
-│ ├── 🧩 AWS_Identity&AccessManagement.png
-│ ├── 👤 AWS_IAM_Admin_Account.png
-│ ├── 🪪 Step1_CreateUser.png
-│ ├── ✅ Step2_AllowPolicy.png
-│ ├── ⛔ Step3_DenyPolicy.png
-│ ├── 🔗 Step4_AttachPolicies.png
-│ ├── 🪣 Step5_AllowedBucket.png
-│ └── 🚫 Step6_DeniedBucket.png
-├── 📄 README.md
-└── 📚 [Other AWS Labs Coming Soon]
 
-'''
+## Project Structure
+
+- **AWS_ProjectLab/**
+  - **AWS_IAM_Identity_Lab/**
+    - 🖼️ **Screenshots/**
+      - 🧩 AWS_Identity&AccessManagement.png
+      - 👤 AWS_IAM_Admin_Account.png
+      - 🪪 Step1_CreateUser.png
+      - ✅ Step2_AllowPolicy.png
+      - ⛔ Step3_DenyPolicy.png
+      - 🔗 Step4_AttachPolicies.png
+      - 🪣 Step5_AllowedBucket.png
+      - 🚫 Step6_DeniedBucket.png
+    - 📄 README.md
+    - 📚 [Other AWS Labs Coming Soon]
+
+
 ---
 
 ## Step 1: Create IAM User
