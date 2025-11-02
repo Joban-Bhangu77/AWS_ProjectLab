@@ -21,20 +21,19 @@ For a detailed explanation of this lab and step-by-step guidance, check out my b
 
 AWS_ProjectLab/
 │
-├── AWS_IAM_Identity_Lab/
-│   ├── Screenshots/
-│   │   ├── AWS_Identity&AccessManagement.png
-├──     ├── AWS_IAM_Admin_Account.png
-├──     ├── Step1_CreateUser.png 
-│   │   ├── Step2_AllowPolicy.png
-│   │   ├── Step3_DenyPolicy.png
-│   │   ├── Step4_AttachPolicies.png
-│   │   ├── Step5_AllowedBucket.png
-│   │   └── Step6_DeniedBucket.png
-│   ├── README.md
-│   
+└── 📂 AWS_IAM_Identity_Lab/
+├── 🖼️ Screenshots/
+│ ├── 🧩 AWS_Identity&AccessManagement.png
+│ ├── 👤 AWS_IAM_Admin_Account.png
+│ ├── 🪪 Step1_CreateUser.png
+│ ├── ✅ Step2_AllowPolicy.png
+│ ├── ⛔ Step3_DenyPolicy.png
+│ ├── 🔗 Step4_AttachPolicies.png
+│ ├── 🪣 Step5_AllowedBucket.png
+│ └── 🚫 Step6_DeniedBucket.png
 │
-└── [Other AWS Labs]/
+├── 📄 README.md
+└── 📚 [Other AWS Labs Coming Soon]
 
 ---
 
